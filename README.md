@@ -1,3 +1,7 @@
 # LLM-CaseStudies
 
-This repository contains the results obtained for LLM testing in Finance. Currently we have tested two Large Languge models (BARD and ChatGPT).
+This repository contains details about LLM testing in different areas. 
+
+- `Finance`
+
+Currently we have tested two Large Languge models (BARD and ChatGPT).
