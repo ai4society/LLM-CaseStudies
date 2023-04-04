@@ -6,7 +6,6 @@ This repository contains the results obtained for LLM testing in Finance. Curren
 
 The `data` folder contains:
 - `logs.xlsx`: chat logs obtained from the LLM testing with different categories of questions in Finance.
-- `images`: folder containing chat snapshots
 
 ## Images
 
