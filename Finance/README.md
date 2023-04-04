@@ -1,4 +1,4 @@
-# LLM Testing Repository
+# LLM Testing in Finance
 
 This repository contains the results obtained for LLM testing in Finance. Currently we have tested two Large Languge models (BARD and ChatGPT). The experiment results are in conjunction with our research paper [Insert citation here].
 
