@@ -1,4 +1,4 @@
-# LLM Testing Repository
+# LLM Testing in Finance
 
 This repository contains the results obtained for LLM testing in Finance. Currently we have tested two Large Languge models (BARD and ChatGPT). The experiment results are in conjunction with our research paper "Can LLMs be Good Financial Advisors?: An Initial Study in Personal Decision Making for Optimized Outcomes".
 
@@ -10,7 +10,6 @@ Kausik Lakkaraju, Sai Krishna Revanth Vuruma, Vishal Pallagani, Bharath Muppasan
 
 The `data` folder contains:
 - `logs.xlsx`: chat logs obtained from the LLM testing with different categories of questions in Finance.
-- `images`: folder containing chat snapshots
 
 ## Images
 
