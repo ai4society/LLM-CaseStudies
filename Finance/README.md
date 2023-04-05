@@ -14,7 +14,7 @@ The `data` folder contains:
 ## Images
 
 The `images` folder contains:
-- `Snapshots.docx`: chat snapshots obtained from the LLM testing with BARD and ChatGPT.
+- `Snapshots.pdf`: chat snapshots obtained from the LLM testing with BARD and ChatGPT.
 
 ## Citation
 
