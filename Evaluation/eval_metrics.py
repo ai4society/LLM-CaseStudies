@@ -13,18 +13,24 @@ def jaccard_distance(str1, str2):
 # Application
 def compute_jaccard(data_path, true_col, pred_col):
     data = pd.read_csv(data_path)
-    data["jaccard_dist"] = data.apply(lambda row: jaccard_distance(row[true_col], row[pred_col]), axis=1)
+    data["jaccard_dist"] = data.apply(lambda row: jaccard_distance(row["{}".format(true_col)], row["{}".format(pred_col)]), axis=1)
     
-    mean_jaccard_dist = np.mean(data["jaccard_dist"])
-    print(f"Mean Jaccard Distance: {mean_jaccard_dist}")
-    return mean_jaccard_dist
+    return np.mean(data["jaccard_dist"])
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Compute the Jaccard distance between two columns in a dataset.")
+    parser = argparse.ArgumentParser(description="Select a function and pass arguments.")
+    parser.add_argument("function", choices=["compute_jaccard"], help="The function to call.")
     parser.add_argument('data', help="Path to the CSV file containing the dataset.")
     parser.add_argument('true_col', help="Name of the column containing the true values.")
     parser.add_argument('pred_col', help="Name of the column containing the predicted values.")
     
     args = parser.parse_args()
 
-    compute_jaccard(args.data, args.true_col, args.pred_col)
+    if args.function == "compute_jaccard":
+        print(compute_jaccard(args.data, args.true_col, args.pred_col))
+    else:
+        print("No such function exists!")
+    
+
+    
+        
